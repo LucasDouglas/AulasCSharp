@@ -3,6 +3,8 @@
     interface IMotorizado
     {
 
+
+        int Velocidade { get; set; }
         void Acelerar();
         void Desacelerar();
 

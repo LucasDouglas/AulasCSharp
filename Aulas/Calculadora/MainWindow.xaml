@@ -1,0 +1,31 @@
+﻿<Window x:Class="Calculadora.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Calculadora"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="350" Width="525">
+    <Grid>
+        <Grid HorizontalAlignment="Left" Height="155" Margin="129,66,0,0" VerticalAlignment="Top" Width="281" Background="Black">
+            <Button x:Name="num1" Content="1" HorizontalAlignment="Left" Margin="0,43,0,0" VerticalAlignment="Top" Width="40" Height="29"/>
+            <Button x:Name="num2" Content="2" HorizontalAlignment="Left" Margin="44,43,0,0" VerticalAlignment="Top" Width="40" Height="29"/>
+            <Button x:Name="num3" Content="3" HorizontalAlignment="Left" Margin="89,43,0,0" VerticalAlignment="Top" Width="40" Height="29" RenderTransformOrigin="-0.585,0.715"/>
+            <Button x:Name="num4" Content="4" HorizontalAlignment="Left" Height="29" Margin="0,81,0,0" VerticalAlignment="Top" Width="40"/>
+            <Button x:Name="num5" Content="5" HorizontalAlignment="Left" Margin="45,81,0,0" VerticalAlignment="Top" Width="39" Height="29"/>
+            <Button x:Name="num6" Content="6" HorizontalAlignment="Left" Margin="89,81,0,0" VerticalAlignment="Top" Width="40" Height="29"/>
+            <Button x:Name="num7" Content="7" HorizontalAlignment="Left" Margin="0,115,0,0" VerticalAlignment="Top" Width="40" Height="30"/>
+            <Button x:Name="num8" Content="8" HorizontalAlignment="Left" Margin="45,115,0,0" VerticalAlignment="Top" Width="39" Height="30"/>
+            <Button x:Name="num9" Content="9" HorizontalAlignment="Left" Margin="89,115,0,0" VerticalAlignment="Top" Width="40" Height="30"/>
+            <Button x:Name="Adicao" Content="+" HorizontalAlignment="Left" Margin="210,41,0,0" VerticalAlignment="Top" Width="43" Height="24" RenderTransformOrigin="1.7,0.487"/>
+            <Button x:Name="subtra" Content="-" HorizontalAlignment="Left" Margin="210,70,0,0" VerticalAlignment="Top" Width="43"/>
+            <Button x:Name="multi" Content="X" HorizontalAlignment="Left" Margin="210,95,0,0" VerticalAlignment="Top" Width="43" RenderTransformOrigin="0.54,1.456"/>
+            <Button x:Name="divi" Content="/" HorizontalAlignment="Left" Margin="210,120,0,0" VerticalAlignment="Top" Width="43" RenderTransformOrigin="0.569,-0.664"/>
+            <Button x:Name="num0" Content="0" HorizontalAlignment="Left" Margin="135,43,0,0" VerticalAlignment="Top" Width="39" Height="29"/>
+            <TextBox x:Name="tela" HorizontalAlignment="Left" Height="23" Margin="24,10,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="212"/>
+
+        </Grid>
+
+
+    </Grid>
+</Window>

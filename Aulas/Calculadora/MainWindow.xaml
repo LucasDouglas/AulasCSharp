@@ -8,26 +8,27 @@
         Title="MainWindow" Height="350" Width="525">
     <Grid x:Name="Porcen" Background="White" Margin="-2,0,2,0">
         <Grid HorizontalAlignment="Left" Height="210" Margin="124,66,0,0" VerticalAlignment="Top" Width="281" Background="#FF3E3E93" RenderTransformOrigin="0.507,0.542">
-            <Button x:Name="num1" Content="1" HorizontalAlignment="Left" Margin="0,43,0,0" VerticalAlignment="Top" Width="40" Height="29" Background="#FF3E7411"/>
-            <Button x:Name="num2" Content="2" HorizontalAlignment="Left" Margin="44,43,0,0" VerticalAlignment="Top" Width="40" Height="29" Background="#FF3E7411"/>
-            <Button x:Name="num3" Content="3" HorizontalAlignment="Left" Margin="89,43,0,0" VerticalAlignment="Top" Width="40" Height="29" RenderTransformOrigin="-0.585,0.715" Background="#FF3E7411"/>
-            <Button x:Name="num4" Content="4" HorizontalAlignment="Left" Height="29" Margin="0,81,0,0" VerticalAlignment="Top" Width="40" Background="#FF3E7411"/>
-            <Button x:Name="num5" Content="5" HorizontalAlignment="Left" Margin="45,81,0,0" VerticalAlignment="Top" Width="39" Height="29" Background="#FF3E7411"/>
-            <Button x:Name="num6" Content="6" HorizontalAlignment="Left" Margin="89,81,0,0" VerticalAlignment="Top" Width="40" Height="29" Background="#FF3E7411"/>
-            <Button x:Name="num7" Content="7" HorizontalAlignment="Left" Margin="0,115,0,0" VerticalAlignment="Top" Width="40" Height="30" Background="#FF3E7411"/>
-            <Button x:Name="num8" Content="8" HorizontalAlignment="Left" Margin="45,115,0,0" VerticalAlignment="Top" Width="39" Height="30" Background="#FF3E7411"/>
-            <Button x:Name="num9" Content="9" HorizontalAlignment="Left" Margin="89,115,0,0" VerticalAlignment="Top" Width="40" Height="30" Background="#FF3E7411"/>
-            <Button x:Name="Adicao" Content="+" HorizontalAlignment="Left" Margin="210,41,0,0" VerticalAlignment="Top" Width="43" Height="24" RenderTransformOrigin="1.7,0.487" Background="#FF3E7411"/>
-            <Button x:Name="subtra" Content="-" HorizontalAlignment="Left" Margin="210,70,0,0" VerticalAlignment="Top" Width="43" Background="#FF3E7411"/>
-            <Button x:Name="multi" Content="X" HorizontalAlignment="Left" Margin="210,95,0,0" VerticalAlignment="Top" Width="43" RenderTransformOrigin="0.54,1.456" Background="#FF3E7411"/>
-            <Button x:Name="divi" Content="/" HorizontalAlignment="Left" Margin="210,120,0,0" VerticalAlignment="Top" Width="43" RenderTransformOrigin="0.569,-0.664" Background="#FF3E7411"/>
-            <Button x:Name="num0" Content="0" HorizontalAlignment="Left" Margin="135,43,0,0" VerticalAlignment="Top" Width="39" Height="29" Background="#FF3E7411"/>
+            <Button x:Name="num1" Content="1" HorizontalAlignment="Left" Margin="0,43,0,0" VerticalAlignment="Top" Width="40" Height="29" Background="#FF3E7411" Click="num1"/>
+            <Button x:Name="num2" Content="2" HorizontalAlignment="Left" Margin="44,43,0,0" VerticalAlignment="Top" Width="40" Height="29" Background="#FF3E7411" Click="num2"/>
+            <Button x:Name="num3" Content="3" HorizontalAlignment="Left" Margin="89,43,0,0" VerticalAlignment="Top" Width="40" Height="29" RenderTransformOrigin="-0.585,0.715" Background="#FF3E7411" Click="num3"/>
+            <Button x:Name="num4" Content="4" HorizontalAlignment="Left" Height="29" Margin="0,81,0,0" VerticalAlignment="Top" Width="40" Background="#FF3E7411" Click="num4"/>
+            <Button x:Name="num5" Content="5" HorizontalAlignment="Left" Margin="45,81,0,0" VerticalAlignment="Top" Width="39" Height="29" Background="#FF3E7411" Click="num5"/>
+            <Button x:Name="num6" Content="6" HorizontalAlignment="Left" Margin="89,81,0,0" VerticalAlignment="Top" Width="40" Height="29" Background="#FF3E7411" Click="num6"/>
+            <Button x:Name="num7" Content="7" HorizontalAlignment="Left" Margin="0,115,0,0" VerticalAlignment="Top" Width="40" Height="30" Background="#FF3E7411" Click="num7"/>
+            <Button x:Name="num8" Content="8" HorizontalAlignment="Left" Margin="45,115,0,0" VerticalAlignment="Top" Width="39" Height="30" Background="#FF3E7411" Click="num8"/>
+            <Button x:Name="num9" Content="9" HorizontalAlignment="Left" Margin="89,115,0,0" VerticalAlignment="Top" Width="40" Height="30" Background="#FF3E7411" Click="num9"/>
+            <Button x:Name="Adicao" Content="+" HorizontalAlignment="Left" Margin="210,41,0,0" VerticalAlignment="Top" Width="43" Height="24" RenderTransformOrigin="1.7,0.487" Background="#FF3E7411" Click="Adicao"/>
+            <Button x:Name="subtra" Content="-" HorizontalAlignment="Left" Margin="210,70,0,0" VerticalAlignment="Top" Width="43" Background="#FF3E7411" Click="subtra"/>
+            <Button x:Name="multi" Content="X" HorizontalAlignment="Left" Margin="210,95,0,0" VerticalAlignment="Top" Width="43" RenderTransformOrigin="0.54,1.456" Background="#FF3E7411" Click="multi"/>
+            <Button x:Name="divi" Content="/" HorizontalAlignment="Left" Margin="210,120,0,0" VerticalAlignment="Top" Width="43" RenderTransformOrigin="0.569,-0.664" Background="#FF3E7411" Click="divi"/>
+            <Button x:Name="num0" Content="0" HorizontalAlignment="Left" Margin="135,43,0,0" VerticalAlignment="Top" Width="39" Height="29" Background="#FF3E7411" Click="num0"/>
             <TextBox x:Name="tela" HorizontalAlignment="Left" Height="23" Margin="24,10,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="212" Background="#FF979797"/>
-            <Button x:Name="Apagar" Content="Apagar" HorizontalAlignment="Left" Margin="135,81,0,0" VerticalAlignment="Top" Width="39" RenderTransformOrigin="0.063,0.457" Height="29" Background="#FF3E7411"/>
-            <Button Content="%" HorizontalAlignment="Left" Margin="135,115,0,0" VerticalAlignment="Top" Width="39" Height="30" Background="#FF3E7411"/>
-            <Button x:Name="Raiz" Content="V²" HorizontalAlignment="Left" Margin="0,150,0,0" VerticalAlignment="Top" Width="40" Height="29" Background="#FF3E7411"/>
-            <Button x:Name="Ponto" Content="." HorizontalAlignment="Left" Margin="44,150,0,0" VerticalAlignment="Top" Width="40" RenderTransformOrigin="0.242,0.782" Height="29" Background="#FF3E7411"/>
-            <Button x:Name="Memo" Content="Memo" HorizontalAlignment="Left" Margin="89,150,0,0" VerticalAlignment="Top" Width="40" Height="29" Background="#FF3E7411"/>
+            <Button x:Name="Apagar" Content="Apagar" HorizontalAlignment="Left" Margin="135,81,0,0" VerticalAlignment="Top" Width="39" RenderTransformOrigin="0.063,0.457" Height="29" Background="#FF3E7411" Click="Apagar"/>
+            <Button Content="%" HorizontalAlignment="Left" Margin="135,115,0,0" VerticalAlignment="Top" Width="39" Height="30" Background="#FF3E7411" Click="Porcen"/>
+            <Button x:Name="Raiz" Content="V²" HorizontalAlignment="Left" Margin="0,150,0,0" VerticalAlignment="Top" Width="40" Height="29" Background="#FF3E7411" Click="Raiz"/>
+            <Button x:Name="Ponto" Content="." HorizontalAlignment="Left" Margin="44,150,0,0" VerticalAlignment="Top" Width="40" RenderTransformOrigin="0.242,0.782" Height="29" Background="#FF3E7411" Click="Ponto"/>
+            <Button x:Name="Memo" Content="Memo" HorizontalAlignment="Left" Margin="89,150,0,0" VerticalAlignment="Top" Width="40" Height="29" Background="#FF3E7411" Click="Memo"/>
+            <Button x:Name="Igual" Content="=" HorizontalAlignment="Left" Margin="135,150,0,0" VerticalAlignment="Top" Width="39" Height="29" Click="Igual"/>
 
         </Grid>
 

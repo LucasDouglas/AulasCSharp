@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Aula03", "Aula03\Aula03.csp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Calculadora", "Calculadora\Calculadora.csproj", "{C287DBA2-A5D6-4DC6-B38E-DABB4D293B55}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Aula04_EntityFramework", "Aula04_EntityFramework\Aula04_EntityFramework.csproj", "{7780FDF5-4210-47F5-A006-DAE297C8A82C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{C287DBA2-A5D6-4DC6-B38E-DABB4D293B55}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C287DBA2-A5D6-4DC6-B38E-DABB4D293B55}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C287DBA2-A5D6-4DC6-B38E-DABB4D293B55}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7780FDF5-4210-47F5-A006-DAE297C8A82C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7780FDF5-4210-47F5-A006-DAE297C8A82C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7780FDF5-4210-47F5-A006-DAE297C8A82C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7780FDF5-4210-47F5-A006-DAE297C8A82C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

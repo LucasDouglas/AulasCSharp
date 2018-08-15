@@ -20,6 +20,10 @@
             <PropertyRef Name="Id" />
           </Key>
           <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Nome" Type="String" Nullable="false" />
+          <Property Name="CPF" Type="String" Nullable="false" />
+          <Property Name="Idade" Type="Int16" Nullable="false" />
+          <Property Name="Ativo" Type="Boolean" Nullable="false" />
         </EntityType>
       </Schema>
     </edmx:ConceptualModels>

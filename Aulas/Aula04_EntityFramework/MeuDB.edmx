@@ -14,6 +14,11 @@
       <Schema xmlns="http://schemas.microsoft.com/ado/2009/11/edm" xmlns:cg="http://schemas.microsoft.com/ado/2006/04/codegeneration" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" Namespace="MeuDB" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" annotation:UseStrongSpatialTypes="false">
         <EntityContainer Name="MeuDBContainer" annotation:LazyLoadingEnabled="true">
           <EntitySet Name="PessoaSet" EntityType="MeuDB.Pessoa" />
+          <EntitySet Name="Enderecos" EntityType="MeuDB.Endereco" />
+          <AssociationSet Name="PessoaEndereco" Association="MeuDB.PessoaEndereco">
+            <End Role="Pessoa" EntitySet="PessoaSet" />
+            <End Role="Endereco" EntitySet="Enderecos" />
+          </AssociationSet>
         </EntityContainer>
         <EntityType Name="Pessoa">
           <Key>
@@ -24,7 +29,32 @@
           <Property Name="CPF" Type="String" Nullable="false" />
           <Property Name="Idade" Type="Int16" Nullable="false" />
           <Property Name="Ativo" Type="Boolean" Nullable="false" />
+          <NavigationProperty Name="Enderecos" Relationship="MeuDB.PessoaEndereco" FromRole="Pessoa" ToRole="Endereco" />
         </EntityType>
+        <EntityType Name="Endereco">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Logradouro" Type="String" Nullable="false" />
+          <Property Name="Nome" Type="String" Nullable="false" />
+          <Property Name="CEP" Type="String" Nullable="false" />
+          <Property Name="Numero" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="Pessoa" Relationship="MeuDB.PessoaEndereco" FromRole="Endereco" ToRole="Pessoa" />
+          <Property Name="PessoaId" Type="Int32" Nullable="false" />
+        </EntityType>
+        <Association Name="PessoaEndereco">
+          <End Type="MeuDB.Pessoa" Role="Pessoa" Multiplicity="1" />
+          <End Type="MeuDB.Endereco" Role="Endereco" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Pessoa">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Endereco">
+              <PropertyRef Name="PessoaId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
       </Schema>
     </edmx:ConceptualModels>
     <!-- C-S mapping content -->

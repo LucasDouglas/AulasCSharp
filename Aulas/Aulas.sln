@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Calculadora", "Calculadora\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Aula04_EntityFramework", "Aula04_EntityFramework\Aula04_EntityFramework.csproj", "{7780FDF5-4210-47F5-A006-DAE297C8A82C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Aula05_EFDataBaseFirst", "Aula05_EFDataBaseFirst\Aula05_EFDataBaseFirst.csproj", "{4411FDD1-C98F-494F-ABC9-4CF796D85657}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{7780FDF5-4210-47F5-A006-DAE297C8A82C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7780FDF5-4210-47F5-A006-DAE297C8A82C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7780FDF5-4210-47F5-A006-DAE297C8A82C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4411FDD1-C98F-494F-ABC9-4CF796D85657}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4411FDD1-C98F-494F-ABC9-4CF796D85657}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4411FDD1-C98F-494F-ABC9-4CF796D85657}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4411FDD1-C98F-494F-ABC9-4CF796D85657}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -70,6 +70,7 @@
     <Compile Include="ContactType.cs">
       <DependentUpon>Modelos.tt</DependentUpon>
     </Compile>
+    <Compile Include="Controllers\PersonController.cs" />
     <Compile Include="CountryRegion.cs">
       <DependentUpon>Modelos.tt</DependentUpon>
     </Compile>
